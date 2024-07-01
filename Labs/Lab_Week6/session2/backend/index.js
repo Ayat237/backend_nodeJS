@@ -3,7 +3,7 @@ import postRouter from "./src/modules/posts/posts.routes.js"
 import connection from './DB/connectionDB.js'
 import cors from "cors"
 const app = express()
-const port = 5000
+const port = process.env.port || 5000
 
 
 app.use(cors())
