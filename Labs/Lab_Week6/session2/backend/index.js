@@ -7,6 +7,12 @@ const port = 5000
 
 
 app.use(cors())
+
+app.get("/",(req,res)=>{
+    res.status(200).json(
+        {msg : "project is starting"}
+    )
+})
 app.use(express.json())
 app.use("/posts",postRouter)
 
